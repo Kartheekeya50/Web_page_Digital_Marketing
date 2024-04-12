@@ -1,0 +1,669 @@
+<!Doctype html>
+<html>
+<head>
+  <title> BRANDING</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfp8uK.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+<style>
+body {
+  margin: 0;
+  padding: 0px;
+}
+/* First HTML page */
+#page1 {
+  position: relative;
+  background-image: url("branding6.jpg");
+  opacity: 0.9;
+  text-transform: capitalize;
+ background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding-left: 60px;
+  padding-top: 10px;
+  font-family: 'Poppins', sans-serif;
+
+}
+* {
+  box-sizing: border-box;
+}
+ /* Style for the logo */
+ .logo img{
+        height: 70px;
+        width : 250px;
+    }
+:root {
+  --accent-color: #45494E;
+  --gradient-color: #FBFBFB;
+}
+a:focus {
+  outline: none;
+  position: relative;
+}
+a:focus:after {
+  width: 50px;
+}
+a:after {
+  content: "";
+  background: #FBFBFB;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  height: 3px;
+  width: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.menu > ol {
+  list-style: none;
+  padding: 0;
+}
+.menu > ol > li {
+
+  border-left: 5px solid var(--gradient-color);
+  margin-bottom: 1px;
+  position: relative;
+  transition: 0.5s;
+}
+.menu > ol > li:nth-child(1) {
+  --accent-color: #FDA085;
+  --gradient-color: #F6D365;
+}
+.menu > ol > li:nth-child(2) {
+  --accent-color: #BFF098;
+  --gradient-color: #6FD6FF;
+}
+.menu > ol > li:nth-child(3) {
+  --accent-color: #EA8D8D;
+  --gradient-color: #A890FE;
+}
+.menu > ol > li:nth-child(4) {
+  --accent-color: #D8B5FF;
+  --gradient-color: #1EAE98;
+}
+.menu > ol > li:nth-child(5) {
+  --accent-color: #C6EA8D;
+  --gradient-color: #FE90AF;
+}
+.menu > ol > li a {
+  color: #fff;
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.menu > ol > li a:not(:last-child):before {
+  content: "\f078";
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.75em;
+  line-height: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+.menu > ol > li:focus,
+.menu > ol > li:focus-within,
+.menu > ol > li:hover {
+  z-index: 100;
+}
+.menu > ol > li:focus:after,
+.menu > ol > li:focus-within:after,
+.menu > ol > li:hover:after {
+  background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
+  max-width: 800px;
+}
+.menu > ol > li:focus .sub-menu,
+.menu > ol > li:focus-within .sub-menu {
+  max-height: 500px;
+}
+.menu > ol > li:focus a:before,
+.menu > ol > li:focus-within a:before {
+  transform: rotate(-180deg);
+}
+.menu > ol > li:after {
+  background: #3c3c3c;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+  max-width: 0;
+  overflow: hidden;
+}
+.menu > ol .sub-menu {
+  border-left: 1px solid #FBFBFB;
+  margin-left: 22.5px;
+  list-style: none;
+  max-height: 0px;
+  overflow: hidden;
+  padding-left: 7.5px;
+  position: relative;
+  transition: 2s;
+  z-index: 1;
+}
+.menu > ol .sub-menu li {
+  font-size: 0.9em;
+}
+.menu > ol .sub-menu li:hover,
+.menu > ol .sub-menu li a:focus {
+  background: rgba(60, 60, 60, 0.3);
+}
+.menu > ol .sub-menu li a:after {
+  bottom: 5px;
+  height: 1px;
+}
+.menu > ol .sub-menu li a:hover:after,
+.menu > ol .sub-menu li a:focus:after {
+  width: 15px;
+}
+@media (min-width: 600px) {
+  a:focus,
+  a:hover {
+    position: relative;
+  }
+  a:focus:after,
+  a:hover:after {
+    width: 50px;
+  }
+  a:after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .menu {
+    margin: 0;
+    margin-top: -10vh;
+    margin-left: 85vh;
+  }
+  .menu > ol {
+    display: block;
+    max-width: none;
+    text-align: center;
+  }
+  .menu > ol > li {
+    border-top: 5px solid var(--accent-color);
+    border-left: 0;
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+    width: 120px;
+  }
+  .menu > ol > li:hover:after,
+  .menu > ol > li:focus:after,
+  .menu > ol > li:focus-within:after {
+    background: linear-gradient(to bottom, var(--accent-color), var(--gradient-color));
+    border-radius: 3px;
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+  }
+  .menu > ol > li:hover .sub-menu,
+  .menu > ol > li:focus .sub-menu,
+  .menu > ol > li:focus-within .sub-menu {
+    max-height: 750px;
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 12.5px;
+  }
+  .menu > ol > li:hover a:before {
+    transform: rotate(-180deg);
+  }
+  .menu > ol .sub-menu {
+    border-left: 0;
+    margin: 15px -15px -15px;
+    padding-left: 0;
+  }
+}
+@media (min-width: 775px) {
+  .menu > ol > li {
+    width: 150px;
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 25px;
+  }
+}
+#page2 {
+  background-image: radial-gradient( circle farthest-corner at 0.2% 0.5%,  rgba(68,36,164,1) 3.7%, rgba(84,212,228,1) 92.7% );
+
+  height: 220vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text {
+  padding-top: 50px;
+  margin-left: 40vh;
+  margin-right: 40vh;
+ color: white
+}
+
+.text h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.image2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Adjust the height as needed */
+}
+
+.image2 img {
+  max-width: 400px; /* Ensure the image doesn't exceed its original size */
+  max-height: 400px; /* Ensure the image doesn't exceed its original size */
+}
+
+#page3 {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  height: 200vh;
+  width: 100%;
+  margin-top: 0;
+}
+
+.head h1 {
+  margin-top: 0px;
+  font-size: 60px;
+  color: #05111f;
+  padding: 20px;
+}
+
+.container1 {
+  display: flex;
+  gap: 70px;
+}
+
+.container2 {
+  display: flex;
+  gap: 70px;
+}
+
+.boxa {
+  flex: 1;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.box1,
+.box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.box1 img,
+.box4 img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+.matter p {
+  color: #76767f;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.box2 img,
+.box3 img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.box3 img {
+  margin-left: 20vh;
+}
+
+.box4 {
+  margin-right: 100px;
+}
+#page4{
+            height: 65vh;
+            width: 100%;
+            padding: 100px 40px;
+            font-family: 'poppins',sans-serif;
+            background-color: #74EBD5;
+          background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+          
+          }
+          .contactus{
+            align-items: center;
+            justify-content: center;
+          }
+          .contactus h1{
+            font-size: 40px;
+          }
+          
+          .contactus h2{
+            font-size: 24px;
+            font-weight: 100;
+          }
+        
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust the height as needed */
+}
+.center-wrapper button{
+  background: transparent;
+  border: 2px solid #fbc2eb;
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 20px 50px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+
+}
+.center-wrapper button::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #aadeef;
+  z-index: -1;
+  clip-path: circle(100% at 50% 50%);
+  transition: 0.5s ease-in-out;
+
+}
+.center-wrapper .get-in-touch-btn:hover{
+  color: #fff;
+  background: #fbc2eb;
+  border-radius: 10px;
+}
+.center-wrapper .get-in-touch-btn:hover::before{
+  clip-path: circle(100% at 50% 50%);
+  
+}
+ 
+         
+#page5 {
+  height: 100vh;
+  width: 100%;
+  background-color: #F7F3F5;
+  font-family: 'Poppins', sans-serif;
+}
+.logo2 img{
+        height: 70px;
+        width : 250px;
+        margin-left: 100px;
+        margin-top: 90px;
+    }
+    .logo2 h1{
+      text-align: left;
+      margin-left: 100px;
+      color: rgb(98, 89, 89);
+    }
+    .socialicons {
+      display: flex;
+      gap: 20px;
+      margin-left: 100px;
+    }
+
+    .socialicons i {
+      font-size: 24px;
+    }
+    .containerz {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* Adjust the width as per your requirements */
+  grid-gap: 20px;
+  margin-left: 800px;
+  margin-top: -200px;
+}
+
+.boxz {
+  flex: 1 0 calc(50% - 20px);
+  padding: 10px;
+  
+}
+.boxz h1{
+font-weight: bold;
+}
+.boxz li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  font-family: roboto slab;
+  font-size: 24px;
+  font-weight: 100;
+  color: rgb(98, 89, 89);
+  font-family: 'Poppins', sans-serif;
+}
+.boxz li a {
+    text-decoration: none;
+    color: rgb(98, 89, 89);
+  }
+
+  /* Optional: Add styles for anchor tags on hover */
+  .boxz li a:hover {
+    /* Add your desired hover styles here */
+    /* For example: change text color */
+    color: red;
+  }
+</style>
+<body>
+  <section id="page1">
+  <div class="logo">
+    <img src="inv.png">
+  </div>
+<nav class="menu">
+  
+  <ol>
+    <li class="menu-item"><a href="index.html">Home</a></li>
+    <li class="menu-item"><a href="aboutus.html">About</a></li>
+    <li class="menu-item">
+      <a href="services.html">Services</a>
+      <ol class="sub-menu">
+        <li class="menu-item"><a href="branding.html">Branding</a></li>
+        <li class="menu-item"><a href="digitalmarket.html">Digital Marketing</a></li>
+        <li class="menu-item"><a href="seo.html">SEO Services</a></li>
+        <li class="menu-item"><a href="socialmedia.html">Social Media</a></li>
+      </ol>
+    </li>
+    <li class="menu-item"><a href="blog.html">Blog</a></li>
+    <li class="menu-item"><a href="contactus.html">Contact</a></li>
+  </ol>
+</nav>
+
+</section>
+<section id="page2">
+  <div class="text">
+    <h1>What is Branding?</h1>
+    <p>
+      Branding design describes how a brand chooses to visually represent their
+      brand identity to the public. When talking about branding design, it
+      typically refers to key brand elements such as the logo, color scheme,
+      typography, and other design components that make a brand stand out from
+      competitors and recognizable to consumers.
+    </p>
+    <p>
+      Besides these main elements of brand identity design, branding design
+      also more broadly refers to how a brand chooses to express themselves in
+      both the physical and digital world; whether that’s on social media, in
+      physical stores, or even the interior design of company office spaces.
+    </p>
+    <p>
+      It’s becoming increasingly important for companies to ensure their brand
+      design is conveyed consistently across all these touchpoints—often by
+      using brand guidelines—in order to strengthen their brand image in the
+      minds of their audience, helping to leave a lasting impression and cement
+      emotional connections with the brand.
+    </p>
+  </div>
+  <br>
+  <br>
+  <div class="image2">
+    <img src="brand2.jpg" alt="Girl in a jacket">
+  </div>
+  <div class="text">
+    <h1>Why is branding design important?</h1>
+    <p>
+      With the digital space being more crowded than ever with many brands
+      having increasingly similar products from one competitor to the next,
+      branding design can be a key differentiator in helping a brand stand out
+      and resonate with target audiences.
+    </p>
+    <p>
+      A brand’s design should ideally represent the personality of a brand, its
+      values, and it can be a powerful tool in shaping consumer attitudes about
+      your brand. Sometimes, a memorable logo or catchy color scheme can leave
+      a longer-lasting impression on consumers than any big-budget ad campaign.
+    </p>
+    <p>
+      If you need advice on how to design a strong brand identity that is fit
+      for the digital era, check out our guide: <a href="#">Brand Guidelines</a>
+    </p>
+  </div>
+</section>
+
+<section id="page3">
+  <div class="head">
+    <h1><center>DESIGNING PROCESS</center></h1>
+  </div>
+  <div class="container1">
+    <div class="boxa box1">
+      <h1><center>Conceptualization</center></h1>
+      <div class="matter">
+        <p>
+          We start with the single most important step of creating a shareable Infographic: brainstorming
+           the right concept. It's quite essential that the topic is fresh, shareable and can be turned 
+           into an eye catchy design. One has to think that far ahead while conceptualizing the 
+           Infographic topic.
+        </p>
+      </div>
+    </div>
+    <div class="boxa box2">
+     <center> <img src="b1.png" alt="Image"></center>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="boxa box3">
+      <center> <img src="b2.png" alt="Image"></center>
+    </div>
+    <div class="boxa box4">
+      <h1><center> Research & Data Analysis
+      </center></h1>
+      <div class="matter">
+        <p>
+         
+          We start drilling Interesting stats, data and follow them up with solid sources &
+           references. This takes hours of research and analysis.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <div class="boxa box1">
+      <h1><center>  Finding the Narrative</center></h1>
+      <div class="matter">
+        <p>
+        
+
+          To convert the stats and the data at hand to a free flowing and interesting script is the challenge. It takes a special set of skills to keep the script short, interesting and highly informative and we are proud to have some highly experienced writers who could throughput such a script.
+        </p>
+      </div>
+    </div>
+    <div class="boxa box2">
+      <center> <img src="b4.png" alt="Image"></center>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="boxa box3">
+      <center> <img src="b5.png" alt="Image"></center>
+    </div>
+    <div class="boxa box4">
+      <h1><center>Sending For Approval & Marketing</center></h1>
+      <div class="matter">
+        <p>
+          
+
+          Once we have the design ready, we send it out to the client for a final approval and based on their input, we finalize the design, ready to conquer the web, wait that's a bit too much, ready to get you some quality links, yeah that sounds about right.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id ="page4">
+  <div class="contactus">
+    <h1><center>Connect with us and let's make something great together</center></h1>
+    <h2><center>"Unlock the hidden treasures by reaching the depths! Let's embark on an adventure together, 
+      over coffee, cocktails, or a good old-fashioned phone call."</center></h2>
+      <div class="center-wrapper">
+        <button class="get-in-touch-btn" onclick="window.location.href='contactus.html'">Let's Get in Touch</button>
+      </div>
+  </div>
+</section>
+
+
+<section id ="page5">
+  <div class="logo2">
+    <img src="inv.png">
+    <h1> Leading digital market <br> company since ages<br> est. 2014</h1>
+  </div>
+  <body>
+    <div class="socialicons">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.example.com"><i class="fas fa-globe"></i></a>
+    </div>
+  </body>
+  
+  <div class="containerz">
+    <div class="boxz">
+      <ul>
+        <h1>Services</h1>
+        <li><a href="branding.html">Branding</a></li>
+        <li><a href="digitalmarket.html">Digital Marketing</a></li>
+        <li><a href="seo.html">SEO Services</a></li>
+        <li><a href="socialmedia.html">Social Media</a></li>
+      </ul>
+    </div>
+    <div class="boxz"> 
+      <ul>
+      <h1>Agency</h1>
+      <li><a href="aboutus.html">Social Media</a></li>
+      <li><a href="aboutus.html">Vison and Misson</a></li>
+      <li><a href="blog.html">Careers</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul></div>
+    <div class="boxz">
+      <ul>
+        <h1>Contact Info</h1>
+        <li>Seshu Apartments,Beside Gruhapriya,4th lane Dwarakanagar </li>
+        <li>Visakhapatnam-16</li>
+        <li>+91 9704808143,+91 7893683143
+        </li>
+        <li>info@invtechnologies.in</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

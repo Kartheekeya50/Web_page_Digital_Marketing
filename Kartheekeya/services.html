@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Services
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <style>
+        html, body {
+    margin: 0;
+    padding: 0; 
+}
+#page1 {
+  background-image: url("services3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+        .logo img{
+        height: 70px;
+        width : 250px;
+        padding-left: 12vh;
+        padding-top: 20px;
+    }
+    .about {
+            padding: 20px;
+            color: #fff;
+        }
+        
+        :root {
+  --accent-color: #45494E;
+  --gradient-color: #FBFBFB;
+}
+a:focus {
+  outline: none;
+  position: relative;
+}
+a:focus:after {
+  width: 50px;
+}
+a:after {
+  content: "";
+  background: #FBFBFB;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  height: 3px;
+  width: 0;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+.menu > ol {
+  list-style: none;
+  padding: 0;
+}
+.menu > ol > li {
+
+  border-left: 5px solid var(--gradient-color);
+  margin-bottom: 1px;
+  position: relative;
+  transition: 0.5s;
+}
+.menu > ol > li:nth-child(1) {
+  --accent-color: #FDA085;
+  --gradient-color: #F6D365;
+}
+.menu > ol > li:nth-child(2) {
+  --accent-color: #BFF098;
+  --gradient-color: #6FD6FF;
+}
+.menu > ol > li:nth-child(3) {
+  --accent-color: #EA8D8D;
+  --gradient-color: #A890FE;
+}
+.menu > ol > li:nth-child(4) {
+  --accent-color: #D8B5FF;
+  --gradient-color: #1EAE98;
+}
+.menu > ol > li:nth-child(5) {
+  --accent-color: #C6EA8D;
+  --gradient-color: #FE90AF;
+}
+.menu > ol > li a {
+  color: white;
+  display: block;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+  
+}
+.menu > ol > li a:not(:last-child):before {
+  content: "\f078";
+  font-family: fontAwesome;
+  font-size: 0.75em;
+  line-height: 50px;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+.menu > ol > li:focus,
+.menu > ol > li:focus-within,
+.menu > ol > li:hover {
+  z-index: 100;
+}
+.menu > ol > li:focus:after,
+.menu > ol > li:focus-within:after,
+.menu > ol > li:hover:after {
+  background: linear-gradient(to left, var(--accent-color), var(--gradient-color));
+  max-width: 800px;
+}
+.menu > ol > li:focus .sub-menu,
+.menu > ol > li:focus-within .sub-menu {
+  max-height: 500px;
+}
+.menu > ol > li:focus a:before,
+.menu > ol > li:focus-within a:before {
+  transform: rotate(-180deg);
+}
+.menu > ol > li:after {
+  background: #3c3c3c;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+  max-width: 0;
+  overflow: hidden;
+}
+.menu > ol .sub-menu {
+  border-left: 1px solid #FBFBFB;
+  margin-left: 22.5px;
+  list-style: none;
+  max-height: 0px;
+  overflow: hidden;
+  padding-left: 7.5px;
+  position: relative;
+  transition: 2s;
+  z-index: 1;
+}
+.menu > ol .sub-menu li {
+  font-size: 0.9em;
+}
+.menu > ol .sub-menu li:hover,
+.menu > ol .sub-menu li a:focus {
+  background: rgba(60, 60, 60, 0.3);
+}
+.menu > ol .sub-menu li a:after {
+  bottom: 5px;
+  height: 1px;
+}
+.menu > ol .sub-menu li a:hover:after,
+.menu > ol .sub-menu li a:focus:after {
+  width: 15px;
+}
+@media (min-width: 600px) {
+  a:focus,
+  a:hover {
+    position: relative;
+  }
+  a:focus:after,
+  a:hover:after {
+    width: 50px;
+  }
+  a:after {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .menu {
+    margin: 0;
+    margin-top: -10vh;
+    margin-left: 85vh;
+  }
+  .menu > ol {
+    display: block;
+    max-width: none;
+    text-align: center;
+  }
+  .menu > ol > li {
+    border-top: 5px solid var(--accent-color);
+    border-left: 0;
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: top;
+    width: 120px;
+  }
+  .menu > ol > li:hover:after,
+  .menu > ol > li:focus:after,
+  .menu > ol > li:focus-within:after {
+    background: linear-gradient(to bottom, var(--accent-color), var(--gradient-color));
+    border-radius: 3px;
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+  }
+  .menu > ol > li:hover .sub-menu,
+  .menu > ol > li:focus .sub-menu,
+  .menu > ol > li:focus-within .sub-menu {
+    max-height: 750px;
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 12.5px;
+  }
+  .menu > ol > li:hover a:before {
+    transform: rotate(-180deg);
+  }
+  .menu > ol .sub-menu {
+    border-left: 0;
+    margin: 15px -15px -15px;
+    padding-left: 0;
+  }
+}
+@media (min-width: 775px) {
+  .menu > ol > li {
+    width: 150px;
+  }
+  .menu > ol > li a:not(:last-child):before {
+    right: 25px;
+  }
+}
+#page2 { 
+            background-color: #F7F3F5;
+            height: 80vh;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .heading2 {
+            flex: 1;
+            margin-left: 20vh;
+            padding-top: 70px;
+            font-family: heebo, sans-serif;
+        }
+        
+        .heading2 h1 {
+            font-weight: 200;
+            font-size: 60px;
+            font-weight: bold;
+            margin-right: 80vh;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .container-bullet {
+            flex: 1;
+            margin-top: 130px;
+        }
+        
+        .bullet-points {
+            list-style-image: url('bullet.png');
+            padding-left: 15px;
+            margin-top: 1em;
+        }
+        .content h1{
+          font-size: 30px;
+          color: #f33c3c;
+          
+        }
+        .content ul li {
+          font-size: 26px;
+        }
+        ul li::marker {
+  color: red; 
+  font-size: 34px;
+}
+
+        #page3{ 
+          background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  height: 240vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+             }
+.container1 {
+  display: flex;
+  gap: 70px;
+}
+.container2 {
+  display: flex;
+  gap: 70px;
+}
+
+.boxa {
+  flex: 1;
+ padding: 50px;
+box-sizing: border-box;
+}
+
+.box1 {
+    margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'heebo',sans-serif;
+}
+.boxa h1{
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.matter p{
+    color: #76767f;
+    font-size: 20px;
+font-family: 'Montserrat',sans-serif;
+}
+
+
+.box2 img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+.box3 img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  margin-left: 20vh;
+}
+.box4 {
+    margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'heebo',sans-serif;
+}
+#page4{
+            height: 50vh;
+            width: 100%;
+            padding-top: 40px;
+            font-family: 'poppins',sans-serif;
+            background-color: #74EBD5;
+          background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+          
+          }
+          .contactus{
+            align-items: center;
+            justify-content: center;
+          }
+          .contactus h1{
+            font-size: 40px;
+            margin-top: 0;
+          }
+          
+          .contactus h3{
+            font-size: 24px;
+            font-weight: 100;
+            margin-top: 0;
+          }
+         
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust the height as needed */
+}
+.center-wrapper button{
+  background: transparent;
+  border: 2px solid #fbc2eb;
+  color: black;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 20px 50px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+
+}
+.center-wrapper button::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #aadeef;
+  z-index: -1;
+  clip-path: circle(100% at 50% 50%);
+  transition: 0.5s ease-in-out;
+
+}
+.center-wrapper .get-in-touch-btn:hover{
+  color: #fff;
+  background: #fbc2eb;
+  border-radius: 10px;
+}
+.center-wrapper .get-in-touch-btn:hover::before{
+  clip-path: circle(100% at 50% 50%);
+  
+}
+
+          
+        
+#page5 {
+  height: 100vh;
+  width: 100%;
+  background-color: #F7F3F5;
+  font-family: 'Poppins', sans-serif;
+}
+.logo2 img{
+        height: 70px;
+        width : 250px;
+        margin-left: 100px;
+        margin-top: 90px;
+    }
+    .logo2 h1{
+      text-align: left;
+      margin-left: 100px;
+      color: rgb(98, 89, 89);
+    }
+    .socialicons {
+      display: flex;
+      gap: 20px;
+      margin-left: 100px;
+    }
+
+    .socialicons i {
+      font-size: 24px;
+    }
+    .containerz {
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* Adjust the width as per your requirements */
+  grid-gap: 20px;
+  margin-left: 800px;
+  margin-top: -200px;
+}
+
+.boxz {
+  flex: 1 0 calc(50% - 20px);
+  padding: 10px;
+  
+}
+.boxz h1{
+font-weight: bold;
+}
+.boxz li {
+  list-style-type: none;
+  padding-bottom: 15px;
+  font-family: roboto slab;
+  font-size: 24px;
+  font-weight: 100;
+  color: rgb(98, 89, 89);
+  font-family: 'Poppins', sans-serif;
+}
+.boxz li a {
+    text-decoration: none;
+    color: rgb(98, 89, 89);
+  }
+
+  /* Optional: Add styles for anchor tags on hover */
+  .boxz li a:hover {
+    /* Add your desired hover styles here */
+    /* For example: change text color */
+    color: red;
+  }
+    </style>
+    <body>
+
+      <section id="page1">
+        <div class="services">
+            <div class="logo">
+                <img src="inv.png">
+              </div>
+
+              <nav class="menu">
+  
+                <ol>
+                  <li class="menu-item"><a href="index.html">Home</a></li>
+                  <li class="menu-item"><a href="aboutus.html">About</a></li>
+                  <li class="menu-item">
+                    <a href="services.html">Services</a>
+                    <ol class="sub-menu">
+                      <li class="menu-item"><a href="branding.html">Branding</a></li>
+                      <li class="menu-item"><a href="digitalmarket.html">Digital Marketing</a></li>
+                      <li class="menu-item"><a href="seo.html">SEO Services</a></li>
+                      <li class="menu-item"><a href="socialmedia.html">Social Media</a></li>
+                    </ol>
+                  </li>
+                  <li class="menu-item"><a href="blog.html">Blog</a></li>
+                  <li class="menu-item"><a href="contactus.html">Contact</a></li>
+                </ol>
+              </nav>
+            </section>
+
+
+            <section id="page2">
+              <div class="container">
+                  <div class="heading2">
+                      <h1> <i class="fa fa-quote-left" style="font-size:50px;color:black"> </i> &nbsp LETS BRING OUR IDEAS TO REALITY</h1>
+                  </div>
+                  <div class="container-bullet">
+                      <div class="content">
+                          <h1>OUR MAJOR SERVICES</h1>
+                          <ul class="bullet-points">
+                              <li>Digital Strategy</li>
+                              <li>Advertising</li>
+                              <li>Online Marketing</li>
+                              <li>Search Engine Optimization</li>
+                              <li>Social Media</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+
+        <section id="page3">
+            <div class="container1">
+                <div class="boxa box1">
+                    <h1><center>BRANDING</center></h1>
+                    <div class="matter">
+                  <p>Mauris pellentesque enim imperdiet quis aliquam erat dolor amet dolor vulputate adipiscing ac auctor viverra potenti eu venenatis tortor, tellus sem eget viverra condimentum sed adipiscing enim.</p>
+                </div>
+            </div>
+                <div class="boxa box2">
+                  <img src="k1.jpg" alt="Image">
+                </div>
+              </div>
+
+
+              <div class="container2">
+
+                <div class="boxa box3">
+                  <img src="k2.jpg" alt="Image">
+                </div>
+                <div class="boxa box4">
+                  <h1><center>DIGITAL MARKETING</center></h1>
+                  <div class="matter">
+                <p>Mauris pellentesque enim imperdiet quis aliquam erat dolor amet dolor vulputate adipiscing ac auctor viverra potenti eu venenatis tortor, tellus sem eget viverra condimentum sed adipiscing enim.</p>
+              </div>
+          </div>
+              </div>
+
+
+              <div class="container1">
+                <div class="boxa box1">
+                    <h1><center>SEO SERVICES</center></h1>
+                    <div class="matter">
+                  <p>Mauris pellentesque enim imperdiet quis aliquam erat dolor amet dolor vulputate adipiscing ac auctor viverra potenti eu venenatis tortor, tellus sem eget viverra condimentum sed adipiscing enim.</p>
+                </div>
+            </div>
+                <div class="boxa box2">
+                  <img src="k3.jpg" alt="Image">
+                </div>
+              </div>
+
+
+              <div class="container2">
+
+                <div class="boxa box3">
+                  <img src="seo4.jpg" alt="Image">
+                </div>
+                <div class="boxa box4">
+                  <h1><center>SOCIAL MEDIA</center></h1>
+                  <div class="matter">
+                <p>Mauris pellentesque enim imperdiet quis aliquam erat dolor amet dolor vulputate adipiscing ac auctor viverra potenti eu venenatis tortor, tellus sem eget viverra condimentum sed adipiscing enim.</p>
+              </div>
+          </div>
+
+        </section>  
+        
+        <section id ="page4">
+          <div class="contactus">
+            <h1><center>Connect with us and let's make something great together</center></h1>
+            <h3><center>"Unlock the hidden treasures by reaching the depths! Let's embark on an adventure together, 
+              over coffee, cocktails, or a good old-fashioned phone call."</center></h3>
+              <div class="center-wrapper">
+                <button class="get-in-touch-btn" onclick="window.location.href='contactus.html'">Let's Get in Touch</button>
+              </div>
+          </div>
+        </section>
+
+
+      <section id ="page5">
+        <div class="logo2">
+          <img src="inv.png">
+          <h1> Leading digital market <br> company since ages<br> est. 2014</h1>
+        </div>
+        <body>
+          <div class="socialicons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.example.com"><i class="fas fa-globe"></i></a>
+          </div>
+        </body>
+        
+        <div class="containerz">
+          <div class="boxz">
+            <ul>
+              <h1>Services</h1>
+              <li><a href="branding.html">Branding</a></li>
+              <li><a href="digitalmarket.html">Digital Marketing</a></li>
+              <li><a href="seo.html">SEO Services</a></li>
+              <li><a href="socialmedia.html">Social Media</a></li>
+            </ul>
+          </div>
+          <div class="boxz"> 
+            <ul>
+            <h1>Agency</h1>
+            <li><a href="aboutus.html">Social Media</a></li>
+            <li><a href="aboutus.html">Vison and Misson</a></li>
+            <li><a href="blog.html">Careers</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul></div>
+          <div class="boxz">
+            <ul>
+              <h1>Contact Info</h1>
+              <li>Seshu Apartments,Beside Gruhapriya,4th lane Dwarakanagar </li>
+              <li>Visakhapatnam-16</li>
+              <li>+91 9704808143,+91 7893683143
+              </li>
+              <li>info@invtechnologies.in</li>
+            </ul>
+          </div>
+        </div>
+      </body>
+      </html>
+      

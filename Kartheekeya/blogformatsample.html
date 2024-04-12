@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+#page2{ 
+  background-color: #Fafafa;
+  height: 65vh;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+             }
+.container {
+  display: flex;
+  gap: 70px;
+}
+.button button{
+  background: transparent;
+  border: 2px solid #d34500;
+  color: #d34500;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  padding: 20px 50px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+
+}
+.button button::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #d34500;
+  z-index: -1;
+  clip-path: circle(100% at 50% 50%);
+  transition: 0.5s ease-in-out;
+
+}
+.button button:hover{
+  color: #fff;
+  background: #d34500;
+}
+.button button:hover::before{
+  clip-path: circle(100% at 50% 50%);
+  
+}
+
+.side {
+  flex: 1;
+ padding: 50px;
+box-sizing: border-box;
+}
+
+.side1{
+    margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'heebo',sans-serif;
+}
+.side1 h1{
+  color: #d34500;
+  text-transform: uppercase;
+}
+
+.matter h2{
+    color: #76767f;
+    font-size: 20px;
+font-family: 'Montserrat',sans-serif;
+}
+
+
+.side2 img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+
+</style>
+<body>
+    <section id="page2">
+        <div class="container">
+            <div class="side side1">
+                <h1><center>Catch up with trending topics</center></h1><br>
+                <div class="matter">
+              <h2>
+                Stay up to date with the latest trends in digital marketing.
+                 Explore the future of AI in transforming marketing strategies.
+                 Learn effective social media advertising tactics to engage your 
+                 target audience. Master SEO for voice search and optimize your
+                  website accordingly. Leverage the power of influencer marketing
+                  and unlock the potential of video marketing for impactful campaigns.</h2><br>
+                <div class="button"><button> Read More</button></div>
+              
+
+            </div>
+        </div>
+            <div class="side side2">
+              <img src="blogg11.png" alt="Image">
+            </div>
+          </div>
+
+      </section>
+
+
+</body>
+</html>
